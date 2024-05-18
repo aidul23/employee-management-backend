@@ -4,7 +4,6 @@ This API provides endpoints to manage employees and user authentication. It is b
 
 ## Table of Contents
 - [Installation](#installation)
-- [Configuration](#configuration)
 - [Endpoints](#endpoints)
   - [Employee Endpoints](#employee-endpoints)
   - [Authentication Endpoints](#authentication-endpoints)
@@ -24,24 +23,10 @@ This API provides endpoints to manage employees and user authentication. It is b
    npm install
    ```
 
-3. Set up environment variables:
-   Create a `.env` file in the root directory and add the following:
-   ```env
-   MONGO_URI=your_mongodb_connection_string
-   PORT=your_port_number
-   JWT_SECRET=your_jwt_secret_key
-   ```
-
-4. Start the server:
+3. Start the server:
    ```sh
    npm start
    ```
-
-## Configuration
-
-- `MONGO_URI`: MongoDB connection string.
-- `PORT`: Port on which the server will run.
-- `JWT_SECRET`: Secret key for signing JWT tokens.
 
 ## Endpoints
 

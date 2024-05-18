@@ -1,6 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const passport = require('passport');
+const cors = require("cors");
 require('dotenv').config();
 
 const employeeRoute = require('./routes/employeeRoute');
@@ -13,6 +14,8 @@ passportConfig(passport);
 
 app.use(express.json());
 app.use(passport.initialize());
+
+app.use(cors({origin: "http://localhost:5173", methods: ["GET", "POST", "OPTIONS"], credentials: true}))
 
 //routes
 app.use("/api/employees", employeeRoute);
